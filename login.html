@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PressNews</title>  
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/sWJqFBd/pressnewzinhosemfundo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="angeloluisgustavoana.css">
+    <!--sofia-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--sofia-->
+    <link rel="stylesheet" href="jogos.html">
+    <link rel="stylesheet" href="contatos.html">
+    <link rel="stylesheet" href="esportes.html">
+    <link rel="stylesheet" href="cidade.html">
+    <link rel="stylesheet" href="bateria.html">
+    <link rel="stylesheet" href="saude.html">
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="overlay" onclick="closeNav()"></div>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="jogos.html"  class="menu-opcao">Jogos</a>
+        <a href="esportes.html" class="menu-opcao">Esportes</a>
+        <a href="politica.html" class="menu-opcao">Política <br>Internacional</a>
+        <a href="ciencia.html" class="menu-opcao">Ciência e <br>Tecnologia</a> 
+        <a href="saude.html"  class="menu-opcao">Saúde</a>
+        <a href="assuntos.html" class="menu-opcao">Assuntos do <br>momento</a>
+        <a href="economia.html" class="menu-opcao">Economia e <br>Finanças</a>
+        <a href="meioambiente.html" class="menu-opcao">Meio Ambiente e <br>Sustentabilidade</a>
+        <a href="educacao.html" class="menu-opcao">Educação</a>
+        <a href="moda.html" class="menu-opcao">Moda e Estilo</a>
+        <a href="artes.html" class="menu-opcao">Artes e Literatura</a>
+        <a href="contatos.html" class="menu-opcao">Contatos</a>
+      </div>
+
+      <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+
+        <center><a href="index.html"><img class="logo" src="https://i.ibb.co/xGJPjT0/pressnewssemfundo.png"></a></center>
+    </header>
+
+
+    <section>  
+        <form>
+            <h3>Bem vindo!</h3>
+            <input type="text" placeholder="Login" id="login">
+            <input type="password" placeholder="Senha" id="senha">
+            <input type="submit" onclick="logar(); return false">
+        </form>
+    </section>
+
+
+    <script>
+
+        function logar(){
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login == "admin" && senha == "admin"){
+                alert('Sucesso!');
+                location.href = "index.html";
+            }else{
+                alert('Não aprendemos como fazer um sistema de cadastro e login direito ainda, tente novamente mais tarde.')
+            }
+
+        }
+
+    </script>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.querySelector(".overlay").style.display = "block";
+      }
+        
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.querySelector(".overlay").style.display = "none";
+      }
+    </script>
+
+      <!--sofia-->
+  <script defer>
+    window.revelar = ScrollReveal({reset:true})
+
+    // topo do site //
+    revelar.reveal('.efeito-txt-topo',{
+      duration: 2000,
+      distance: '90px'
+    })
+
+    revelar.reveal('.efeito-img-topo',{
+      duration: 2000,
+      distance: '90px',
+      delay: 500
+    })
+  </script>
+<!--sofia-->
+  </body>
+  <!--sofia-->
+  <script defer>
+    window.revelar = ScrollReveal({reset:true})
+
+    // topo do site //
+    revelar.reveal('.efeito-txt-topo',{
+      duration: 2000,
+      distance: '90px'
+    })
+
+    revelar.reveal('.efeito-img-topo',{
+      duration: 2000,
+      distance: '90px',
+      delay: 500
+    })
+  </script>
+<!--sofia-->
+
+  <style>
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    form {
+        width: 50%;
+        margin: 200px auto;
+        text-align: center;
+    }
+
+    form h3 {
+        font-size: 41px;
+        font-family: 'Open Sans';
+    }
+
+    input {
+        display: block;
+        margin: 10px auto;
+        width: 250px;
+        height: 30px;
+    }
+
+    section {
+        max-width: 500px;
+        margin: 75px auto;
+        padding: 1px;
+        background-color: #fff;
+        border-radius: 100px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    </style>
+
+  </html>
